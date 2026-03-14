@@ -1,3 +1,7 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
 export const firebaseConfig = {
   apiKey: "AIzaSyAkB4iwe-nWRYthyz9aqv9pIp0WIOkTtAs",
   authDomain: "badside-boutique.firebaseapp.com",
@@ -14,3 +18,15 @@ export const magicLinks = [
   "juanteam",
   "friendvip"
 ];
+
+export const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+export const auth = getAuth(app);
+
+export async function initFirebaseAuth() {
+  try {
+    await signInAnonymously(auth);
+  } catch (error) {
+    console.error("Erreur auth Firebase :", error);
+  }
+}
