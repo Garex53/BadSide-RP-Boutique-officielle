@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BadSide RP - Armes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-badside.png" alt="Logo BadSide" />
+        <div>
+          <div class="brand-title">BadSide RP</div>
+          <div class="brand-sub">Boutique officielle du serveur</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a class="active" href="armes.html">Armes</a>
+        <a href="vehicules.html">Véhicules</a>
+        <a href="patchnotes.html">Patch Notes</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <div class="kicker">✦ BadSide official drop</div>
+      <h1>Caisse d'armes officielle BadSide</h1>
+      <p>Une caisse premium pensée pour l'univers BadSide RP, avec un catalogue visuel, une ouverture stylée et une validation d'accès via Firebase. Les achats restent finalisés sur la boutique Tebex officielle.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Catalogue d'armes</h2>
+        <p>Les armes qui peuvent apparaître dans la caisse premium BadSide.</p>
+      </div>
+      <div class="catalog-grid">
+        <article class="weapon-card">
+          <span class="weapon-badge badge-common">Commun</span>
+          <div class="weapon-thumb"><img src="assets/sns.jpg" alt="SNS Pistol" /></div>
+          <h3>SNS Pistol</h3>
+          <p>Arme de poing compacte et discrète, idéale pour les petites opérations rapides.</p>
+          <div class="weapon-meta"><span>Prix estimé : 15 000$</span><span>Chance en caisse : 40%</span></div>
+        </article>
+        <article class="weapon-card">
+          <span class="weapon-badge badge-common">Commun</span>
+          <div class="weapon-thumb"><img src="assets/pistol.webp" alt="Pistol" /></div>
+          <h3>Pistol</h3>
+          <p>Le classique fiable de la rue, propre, efficace et toujours utile en situation tendue.</p>
+          <div class="weapon-meta"><span>Prix estimé : 18 000$</span><span>Chance en caisse : 40%</span></div>
+        </article>
+        <article class="weapon-card">
+          <span class="weapon-badge badge-rare">Rare</span>
+          <div class="weapon-thumb"><img src="assets/vintage.jpg" alt="Vintage Pistol" /></div>
+          <h3>Vintage Pistol</h3>
+          <p>Un modèle plus recherché avec du style et une présence plus marquée.</p>
+          <div class="weapon-meta"><span>Prix estimé : 26 000$</span><span>Chance en caisse : 15%</span></div>
+        </article>
+        <article class="weapon-card">
+          <span class="weapon-badge badge-rare">Rare</span>
+          <div class="weapon-thumb"><img src="assets/perico.jpg" alt="Perico Pistol" /></div>
+          <h3>Perico Pistol</h3>
+          <p>Une pièce spéciale pour les joueurs qui veulent un drop un peu plus exclusif.</p>
+          <div class="weapon-meta"><span>Prix estimé : 28 000$</span><span>Chance en caisse : 15%</span></div>
+        </article>
+        <article class="weapon-card">
+          <span class="weapon-badge badge-legendary">Légendaire</span>
+          <div class="weapon-thumb"><img src="assets/minismg.jpg" alt="MiniSMG" /></div>
+          <h3>MiniSMG</h3>
+          <p>Automatique compacte, nerveuse et très efficace en combat rapproché.</p>
+          <div class="weapon-meta"><span>Prix estimé : 55 000$</span><span>Chance en caisse : 5%</span></div>
+        </article>
+        <article class="weapon-card">
+          <span class="weapon-badge badge-legendary">Légendaire</span>
+          <div class="weapon-thumb"><img src="assets/microsmg.jpg" alt="MicroSMG" /></div>
+          <h3>MicroSMG</h3>
+          <p>Une arme rapide et redoutable, taillée pour les échanges intenses.</p>
+          <div class="weapon-meta"><span>Prix estimé : 60 000$</span><span>Chance en caisse : 5%</span></div>
+        </article>
+        <article class="weapon-card">
+          <span class="weapon-badge badge-ultimate">Ultime</span>
+          <div class="weapon-thumb"><img src="assets/ak.png" alt="AK Compact" /></div>
+          <h3>AK Compact</h3>
+          <p>Le gros lot de la caisse BadSide. Rare, puissant et très convoité.</p>
+          <div class="weapon-meta"><span>Prix estimé : 120 000$</span><span>Chance en caisse : 1%</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Case Opening BadSide</h2>
+        <p>Pour ouvrir, il faut un code acheté sur Tebex ou un lien magique pour toi et les amis autorisés.</p>
+      </div>
+
+      <div class="case-opening-wrapper">
+        <div class="case-banner"><span class="dot"></span><span>BadSide RP Weapon Crate</span><span class="dot"></span></div>
+
+        <div class="access-box" id="accessBox">
+          <h3>Accès à la caisse</h3>
+          <p>Achète ta caisse sur Tebex, puis entre ton code ici. Les accès spéciaux via lien magique restent disponibles pour toi et les amis que tu autorises.</p>
+          <div class="access-row">
+            <input id="paidCodeInput" type="text" placeholder="Entrer votre code d'ouverture" />
+            <button id="unlockCaseBtn" class="btn btn-primary" type="button">Débloquer</button>
+            <a class="btn btn-dark" href="https://badside.tebex.io" target="_blank" rel="noopener">Acheter sur Tebex</a>
+          </div>
+          <div class="access-msg" id="accessMessage"></div>
+        </div>
+
+        <div class="case-pointer"></div>
+        <div class="case-window">
+          <div class="case-track" id="caseTrack"></div>
+        </div>
+
+        <div class="case-actions">
+          <button id="openCaseBtn" class="btn btn-primary" type="button" disabled>Ouvrir la caisse BadSide — 1750 Coins</button>
+          <a class="btn btn-dark" href="https://badside.tebex.io" target="_blank" rel="noopener">Passer par Tebex</a>
+        </div>
+
+        <div class="case-result" id="caseResult">Paiement requis pour ouvrir cette caisse.</div>
+
+        <div class="case-history">
+          <h3>Derniers drops</h3>
+          <ul class="history-list" id="caseHistory"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">© 2026 BadSide RP — Boutique officielle</div>
+  </footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import {
+      getFirestore,
+      doc,
+      getDoc,
+      updateDoc,
+      addDoc,
+      collection,
+      serverTimestamp,
+      limit,
+      query,
+      orderBy,
+      getDocs
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    import { firebaseConfig, tebexUrl, magicLinks } from "./js_firebase_config.js";
+
+    const WEAPONS = [
+      { name: "SNS Pistol", rarity: "Commun", chance: 40, className: "rarity-common", image: "assets/sns.jpg" },
+      { name: "Pistol", rarity: "Commun", chance: 40, className: "rarity-common", image: "assets/pistol.webp" },
+      { name: "Vintage Pistol", rarity: "Rare", chance: 15, className: "rarity-rare", image: "assets/vintage.jpg" },
+      { name: "Perico Pistol", rarity: "Rare", chance: 15, className: "rarity-rare", image: "assets/perico.jpg" },
+      { name: "MiniSMG", rarity: "Légendaire", chance: 5, className: "rarity-legendary", image: "assets/minismg.jpg" },
+      { name: "MicroSMG", rarity: "Légendaire", chance: 5, className: "rarity-legendary", image: "assets/microsmg.jpg" },
+      { name: "AK Compact", rarity: "Ultime", chance: 1, className: "rarity-ultimate", image: "assets/ak.png" }
+    ];
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    await signInAnonymously(auth).catch(() => {});
+
+    const track = document.getElementById("caseTrack");
+    const openBtn = document.getElementById("openCaseBtn");
+    const result = document.getElementById("caseResult");
+    const historyList = document.getElementById("caseHistory");
+    const unlockBtn = document.getElementById("unlockCaseBtn");
+    const codeInput = document.getElementById("paidCodeInput");
+    const accessMessage = document.getElementById("accessMessage");
+
+    document.querySelectorAll('a[href="https://badside.tebex.io"]').forEach(link => link.href = tebexUrl);
+
+    let rolling = false;
+    let hasAccess = false;
+    let accessType = "locked";
+
+    function isMagicLink() {
+      const params = new URLSearchParams(window.location.search);
+      const vip = params.get("vip");
+      return magicLinks.includes(vip);
+    }
+
+    function grantAccess(type) {
+      hasAccess = true;
+      accessType = type;
+      openBtn.disabled = false;
+      result.classList.remove("jackpot");
+      result.textContent = type === "magic"
+        ? "Accès spécial BadSide activé. Tu peux ouvrir la caisse."
+        : "Code validé. Tu peux ouvrir une caisse.";
+    }
+
+    function weightedPick(items) {
+      const total = items.reduce((sum, item) => sum + item.chance, 0);
+      let rand = Math.random() * total;
+      for (const item of items) {
+        rand -= item.chance;
+        if (rand <= 0) return item;
+      }
+      return items[items.length - 1];
+    }
+
+    function createCard(item) {
+      const card = document.createElement("div");
+      card.className = `case-card ${item.className}`;
+      card.innerHTML = `
+        <div class="weapon-preview"><img src="${item.image}" alt="${item.name}"></div>
+        <div class="weapon-name">${item.name}</div>
+        <div class="weapon-rarity">${item.rarity}</div>
+        <div class="weapon-chance">${item.chance}% de chance</div>
+      `;
+      return card;
+    }
+
+    function showPreview() {
+      track.innerHTML = "";
+      const previewItems = [WEAPONS[0], WEAPONS[1], WEAPONS[2], WEAPONS[3], WEAPONS[4], WEAPONS[5], WEAPONS[6], WEAPONS[1], WEAPONS[0], WEAPONS[2]];
+      previewItems.forEach(item => track.appendChild(createCard(item)));
+      track.style.transition = "none";
+      track.style.transform = "translateX(0)";
+    }
+
+    function generateRollItems(winningItem, totalItems = 80) {
+      const items = [];
+      for (let i = 0; i < totalItems; i++) items.push(WEAPONS[Math.floor(Math.random() * WEAPONS.length)]);
+      const winningIndex = totalItems - 10;
+      items[winningIndex] = winningItem;
+      return { items, winningIndex };
+    }
+
+    async function addHistoryLine(text) {
+      const li = document.createElement("li");
+      li.innerHTML = text;
+      historyList.prepend(li);
+      while (historyList.children.length > 6) historyList.removeChild(historyList.lastChild);
+    }
+
+    async function loadHistory() {
+      historyList.innerHTML = "";
+      try {
+        const q = query(collection(db, "crateDrops"), orderBy("createdAt", "desc"), limit(6));
+        const snap = await getDocs(q);
+        if (snap.empty) {
+          addHistoryLine("Aucun drop enregistré pour le moment.");
+          return;
+        }
+        snap.forEach(docSnap => {
+          const data = docSnap.data();
+          addHistoryLine(`<strong>${data.weapon}</strong> — ${data.rarity}`);
+        });
+      } catch {
+        addHistoryLine("Historique indisponible pour le moment.");
+      }
+    }
+
+    async function redeemCode(rawCode) {
+      const code = rawCode.trim().toUpperCase();
+      if (!code) {
+        accessMessage.textContent = "Entre un code d'ouverture.";
+        return;
+      }
+      try {
+        const ref = doc(db, "crateCodes", code);
+        const snap = await getDoc(ref);
+        if (!snap.exists()) {
+          accessMessage.textContent = "Code invalide.";
+          return;
+        }
+        const data = snap.data();
+        if (!data.active || (data.usesRemaining ?? 0) <= 0) {
+          accessMessage.textContent = "Code déjà utilisé ou inactif.";
+          return;
+        }
+        await updateDoc(ref, { usesRemaining: (data.usesRemaining ?? 1) - 1 });
+        accessMessage.textContent = "Accès validé.";
+        grantAccess("paid");
+      } catch {
+        accessMessage.textContent = "Erreur Firebase. Vérifie ta configuration.";
+      }
+    }
+
+    async function saveDrop(item, mode) {
+      try {
+        await addDoc(collection(db, "crateDrops"), {
+          weapon: item.name,
+          rarity: item.rarity,
+          accessType: mode,
+          createdAt: serverTimestamp()
+        });
+      } catch {}
+    }
+
+    async function openCase() {
+      if (!hasAccess || rolling) return;
+      rolling = true;
+      openBtn.disabled = true;
+      result.classList.remove("jackpot");
+      result.textContent = "Ouverture en cours...";
+
+      track.style.transition = "none";
+      track.style.transform = "translateX(0)";
+      track.innerHTML = "";
+
+      const winningItem = weightedPick(WEAPONS);
+      const { items, winningIndex } = generateRollItems(winningItem);
+      items.forEach(item => track.appendChild(createCard(item)));
+
+      const cards = track.querySelectorAll(".case-card");
+      const targetCard = cards[winningIndex];
+      const windowEl = document.querySelector(".case-window");
+      const cardWidth = targetCard.offsetWidth;
+      const windowWidth = windowEl.offsetWidth;
+      const gap = 16;
+      const randomOffset = Math.floor(Math.random() * 40) - 20;
+      const targetX = (winningIndex * (cardWidth + gap)) - (windowWidth / 2) + (cardWidth / 2) + randomOffset;
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          track.style.transition = "transform 5.5s cubic-bezier(0.08, 0.8, 0.12, 1)";
+          track.style.transform = `translateX(-${targetX}px)`;
+        });
+      });
+
+      setTimeout(async () => {
+        targetCard.classList.add("winner");
+        if (winningItem.name === "AK Compact") {
+          result.classList.add("jackpot");
+          result.innerHTML = `🔥 JACKPOT — <strong>${winningItem.name}</strong> <span style="opacity:.75">(${winningItem.rarity})</span>`;
+        } else {
+          result.innerHTML = `Tu as obtenu : <strong>${winningItem.name}</strong> <span style="opacity:.75">(${winningItem.rarity})</span>`;
+        }
+        await saveDrop(winningItem, accessType);
+        await loadHistory();
+
+        if (accessType === "paid") {
+          hasAccess = false;
+          accessType = "locked";
+          openBtn.disabled = true;
+          result.innerHTML += `<br><span class="small">Nouvelle ouverture = nouveau paiement sur Tebex.</span>`;
+        } else {
+          openBtn.disabled = false;
+        }
+        rolling = false;
+      }, 5700);
+    }
+
+    unlockBtn.addEventListener("click", () => redeemCode(codeInput.value));
+    openBtn.addEventListener("click", openCase);
+
+    if (isMagicLink()) grantAccess("magic");
+    showPreview();
+    loadHistory();
+  </script>
+</body>
+</html>
